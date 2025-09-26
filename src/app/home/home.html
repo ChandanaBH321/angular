@@ -1,0 +1,51 @@
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">🛍️ E-Shop</div>
+  <ul class="nav-links">
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/men">Men</a></li>
+    <li><a routerLink="/women">Women</a></li>
+    <li><a routerLink="/kids">Kids</a></li>
+    <li><a routerLink="/cart">Cart 🛒</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+<!-- Carousel -->
+<app-carousel></app-carousel>
+
+<!-- Products -->
+<section class="products">
+  <div class="product-card" *ngFor="let product of products">
+    <img [src]="product.img" alt="{{product.name}}">
+    <h3>{{product.name}}</h3>
+    <p>₹{{product.price}}</p>
+    <button (click)="addToCart(product)">Add to Cart</button>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section>
+  <h2 style="text-align:center; margin: 1rem 0;">“You can't wait for customers to come to you. You have to figure out where they are, go there and drag them back to your store.”</h2>
+  <app-gallery [images]="galleryImages"></app-gallery>
+</section>
+
+<!-- Featured Products Gallery -->
+<app-featured-gallery></app-featured-gallery>
+
+
+
+<!-- New Arrivals - Beauty Products -->
+<app-beauty-new></app-beauty-new>
+
+<!-- Footer -->
+<app-footer></app-footer>
+
+
+
+
+
+

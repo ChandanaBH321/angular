@@ -1,0 +1,11 @@
+<section class="beauty-new">
+  <h2>New Arrivals - Beauty Products</h2>
+  <div class="beauty-products">
+    <div class="beauty-card" *ngFor="let product of newArrivals">
+      <img [src]="product.img" [alt]="product.name">
+      <h3>{{product.name}}</h3>
+      <p>{{product.description}}</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</section>

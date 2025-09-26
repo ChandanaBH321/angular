@@ -1,0 +1,80 @@
+.success-page {
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1607082349566-187342175e2d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.success-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: popIn 0.8s ease-out;
+}
+
+.success-container h2 {
+  color: #4caf50;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.order-id {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-home, .btn-orders {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn-home {
+  background: #2196f3;
+  color: #fff;
+}
+
+.btn-home:hover {
+  background: #1976d2;
+  transform: scale(1.05);
+}
+
+.btn-orders {
+  background: #ff9800;
+  color: #fff;
+}
+
+.btn-orders:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+/* ✅ Animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

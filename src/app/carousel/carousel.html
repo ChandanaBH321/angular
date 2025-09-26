@@ -1,0 +1,28 @@
+<div class="carousel">
+  <div class="slides">
+    <div class="slide" *ngFor="let slide of slides; let i = index"
+         [class.active]="i === currentIndex">
+      <img [src]="slide.img" [alt]="slide.title">
+      <div class="caption">{{ slide.title }}</div>
+    </div>
+  </div>
+  
+
+  <!-- Navigation Buttons -->
+  <button class="prev" (click)="prev()">&#10094;</button>
+  <button class="next" (click)="next()">&#10095;</button>
+
+  <!-- Custom Left Text -->
+  <div class="carousel-text left-text">
+    <h2>Special Offers</h2>
+    <p>Up to 50% Off!</p>
+  </div>
+
+  <!-- Custom Right Text -->
+  <div class="carousel-text right-text">
+    <h2>New Arrivals</h2>
+    <p>Latest Collection</p>
+  </div>
+</div>
+
+

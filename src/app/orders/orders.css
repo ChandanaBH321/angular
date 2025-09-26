@@ -1,0 +1,75 @@
+.orders-page {
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.orders-container {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.order-card {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.order-card h3 {
+  margin: 0 0 0.5rem;
+  color: #222;
+}
+
+.order-items {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+.order-item {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.order-total {
+  font-weight: bold;
+  color: #000;
+  margin-top: 0.5rem;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status.delivered {
+  background: #4caf50;
+  color: white;
+}
+
+.status.shipped {
+  background: #2196f3;
+  color: white;
+}
+
+.status.pending {
+  background: #ff9800;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
