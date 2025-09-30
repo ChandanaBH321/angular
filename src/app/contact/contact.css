@@ -1,0 +1,82 @@
+/* Wrapper with background */
+.contact-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://www.shutterstock.com/image-photo/cheerful-happy-teen-asian-woman-600nw-2161639051.jpg') no-repeat center center/cover;
+  padding: 20px;
+}
+
+/* Form container */
+.contact-container {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.contact-container h2 {
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Inputs */
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #1d3557;
+  box-shadow: 0 0 6px rgba(29, 53, 87, 0.4);
+  outline: none;
+}
+
+/* Button */
+.contact-container button {
+  width: 100%;
+  padding: 12px;
+  background: #1d3557;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.contact-container button:hover {
+  background: #457b9d;
+  transform: translateY(-3px);
+}
+
+/* Success message */
+.success {
+  margin-top: 15px;
+  color: green;
+  font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

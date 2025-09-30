@@ -1,62 +1,54 @@
-/* Fullscreen responsive background */
+/* Wrapper with full background */
 .login-wrapper {
   height: 100vh;
   width: 100%;
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReQWclWaalPJOzRwJsRJJAEHcOaxiYL5NEug&s') no-repeat center center/cover;
+  background: url('https://thumbs.dreamstime.com/b/little-girl-pointing-something-family-shopping-parents-daughter-copy-space-holding-shopper-bags-yellow-studio-156232563.jpg') no-repeat center center/cover;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* ✅ align to left */
   align-items: center;
-  padding: 15px;
+  padding-left: 80px; /* ✅ spacing from left edge */
+  box-sizing: border-box;
 }
 
-/* Login card */
+/* Login container */
 .login-container {
   width: 100%;
-  max-width: 400px;
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.95);
+  max-width: 380px;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
   text-align: center;
-  animation: floatIn 1s ease-out;
+  animation: slideIn 0.8s ease-out;
 }
 
 /* Title */
 .login-container h2 {
   margin-bottom: 10px;
-  font-size: 28px;
+  font-size: 26px;
   color: #1d3557;
 }
 
-/* Subtitle */
 .subtitle {
   font-size: 14px;
-  color: #555;
   margin-bottom: 20px;
+  color: #555;
 }
 
 /* Inputs */
 .login-container input {
   width: 100%;
   padding: 12px;
-  margin: 12px 0;
+  margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 15px;
-  transition: 0.3s;
 }
 
-.login-container input:focus {
-  border-color: #1d3557;
-  box-shadow: 0 0 6px rgba(29, 53, 87, 0.4);
-  outline: none;
-}
-
-/* Button */
-.login-container .btn-animate {
-  width: 100%;
-  padding: 12px;
-  background: #6e51a3;
+.login-container button {
+  width: 90%;
+  padding: 10px;
+  background:#6e51a3;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -66,35 +58,36 @@
   transition: transform 0.3s, background 0.3s;
 }
 
-.login-container .btn-animate:hover {
+.login-container button:hover {
   background: #457b9d;
   transform: translateY(-3px);
 }
 
-/* Error */
-.error {
-  color: red;
-  margin-top: 12px;
+/* Register link */
+.register-link {
+  margin-top: 15px;
   font-size: 14px;
 }
 
-/* Animations */
-@keyframes floatIn {
+.register-link a {
+  color: #1d3557;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  color: #457b9d;
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateX(-50px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
-}
-
-.animate-fade {
-  animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
 }

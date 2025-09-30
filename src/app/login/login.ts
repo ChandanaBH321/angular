@@ -18,6 +18,9 @@ export class Login {
 
   constructor(private authService: AuthService, private router: Router) {}
 
+  goToRegister() {
+  this.router.navigate(['/register']);
+}
   onLogin() {
     this.authService.login({ email: this.email, password: this.password }).subscribe({
       next: (res: any) => {
@@ -29,5 +32,8 @@ export class Login {
         this.error = err.error?.error || 'Login failed!';
       }
     });
+
+
+    
   }
 }

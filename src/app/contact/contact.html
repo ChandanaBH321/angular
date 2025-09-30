@@ -1,0 +1,16 @@
+<div class="contact-wrapper">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p class="subtitle">We’d love to hear from you. Fill out the form below.</p>
+
+    <form (ngSubmit)="submitForm()">
+      <input type="text" placeholder="Your Name" [(ngModel)]="name" name="name" required />
+      <input type="email" placeholder="Your Email" [(ngModel)]="email" name="email" required />
+      <textarea placeholder="Your Message" [(ngModel)]="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p *ngIf="success" class="success">{{ success }}</p>
+  </div>
+</div>

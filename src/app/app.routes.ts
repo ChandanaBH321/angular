@@ -6,6 +6,8 @@ import { Checkout } from './checkout/checkout';
 import { Payment } from './payment/payment';
 import { Success } from './success/success';
 import { Orders } from './orders/orders';
+import { Contact } from './contact/contact';
+import { Register } from './register/register';
 
 
 
@@ -18,6 +20,8 @@ export const routes: Routes = [
        { path: 'payment', component:Payment },
          { path: 'success', component: Success }, 
            { path: 'orders', component: Orders},
+           { path: 'contact', component:Contact },
+            { path: 'register', component:Register},
   { path: '**', redirectTo: '' }
   
 ];

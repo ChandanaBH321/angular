@@ -1,11 +1,11 @@
 .payment-page {
   min-height: 100vh;
-  background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437e0?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background: url('https://img.freepik.com/free-photo/beautiful-asian-woman-sunglasses-going-shopping-holding-bags-showing-credit-card-standing-ove_1258-156865.jpg?semt=ais_incoming&w=740&q=80') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  justify-content: flex-start;
+  padding-left:50px;
 }
 
 .payment-container {
