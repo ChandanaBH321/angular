@@ -14,7 +14,7 @@ import { CartService, } from '../services/cart.service';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, Carousel,Footer,BeautyNew,FeaturedGallery,Gallery],
+  imports: [CommonModule,  Carousel,Footer,BeautyNew,FeaturedGallery,Gallery],
   templateUrl: './home.html',
   styleUrls: ['./home.css']
 })

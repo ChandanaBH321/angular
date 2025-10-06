@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Carousel  {
   slides = [
-    { id: 1, img: 'https://cancerresearchforum.com/wp-content/uploads/2024/08/revenge-shopping.jpg', title: 'Fashion is what you buy, style is what you do with it.' },
+    { id: 1, img: 'https://st.depositphotos.com/2069323/2156/i/450/depositphotos_21565261-Shopping-woman-holding-shopping-bags.jpg', title: 'Fashion is what you buy, style is what you do with it.' },
     { id: 2, img: 'https://img.freepik.com/free-photo/young-beautiful-blonde-woman-jacket-blue-wall-with-mobile-phone-doing-online-shopping_496169-1447.jpg', title: 'New Arrivals' },
     { id: 3, img: 'https://img.freepik.com/free-photo/beautiful-smiling-young-blonde-woman-pointing-sunglasses-holding-shopping-bags-credit-card-pink-wall_496169-1506.jpg', title: 'Best Deals' }
   ];
