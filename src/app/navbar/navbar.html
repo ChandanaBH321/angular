@@ -5,8 +5,15 @@
     <span class="brand-text">My E-Shop</span>
   </div>
 
+  <!-- Hamburger Icon -->
+  <div class="hamburger" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
   <!-- Navigation Links -->
-  <ul class="nav-links">
+  <ul class="nav-links" [class.active]="menuOpen">
     <li><a routerLink="/login">Login</a></li>
     <li><a routerLink="/cart">🛒 Cart</a></li>
     <li><a routerLink="/contact">Contact</a></li>
